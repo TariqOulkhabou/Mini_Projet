@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html>
+<head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap">
+	<title>Inscription</title>
+	<link rel="stylesheet" type="text/css" href="Inscription.css">
+</head>
+<body>
+        <header>
+		<a href="index.html"><h2 id="icon">Fitness <span>Club</span></h2></a>
+        </header>
+		 
+	<div class="login-page">
+		<div class="form">
+            <form class="register-form">
+              <input type="text" placeholder="Username" required/>
+              <input type="password" placeholder="Password" required>
+              <input type="email" placeholder="Email"required>
+              <button>Create</button>
+              <p class="message">Already Registred ?<a href="#">Login</a></p>
+            </form>
+            <form class="login-form">
+              <input type="text" placeholder="Username" required>
+              <input type="password" placeholder="Password" required>
+              <button>Login</button>
+              <p class="message">Not Registred ? <a href="#">Register</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.message a').click(function(){
+        $('form').animate({height:"toggle",opacity:"toggle"},"slow")
+        });
+    </script>
+</body>
+</html>
